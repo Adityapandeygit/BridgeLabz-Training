@@ -1,4 +1,4 @@
-class isPalindrome {
+class IsPalindrome {
     public boolean palindrome(int x) {
         String str=Integer.toString(x);
         int i=0;

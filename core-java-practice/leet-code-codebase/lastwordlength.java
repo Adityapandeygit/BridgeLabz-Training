@@ -1,4 +1,4 @@
-public class lastwordlength {
+public class Lastwordlength {
     public int lengthOfLastWord(String s) {
         s=s.trim();
         String[] word=s.split("\\s+");

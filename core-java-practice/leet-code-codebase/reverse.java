@@ -1,4 +1,4 @@
-class reverse {
+class Reverse {
     public int reverseno(int x) {
         long output = 0;
 

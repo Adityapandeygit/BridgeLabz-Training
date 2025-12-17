@@ -1,4 +1,4 @@
-class removeDuplicates {
+class RemoveDuplicates {
     public int removeduplicates(int[] nums) {
         if(nums.length == 0) return 0;
         int count = 1;
