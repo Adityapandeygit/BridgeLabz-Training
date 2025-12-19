@@ -1,7 +1,6 @@
 class Reverse {
     public int reverseno(int x) {
         long output = 0;
-
         while(x!=0){
             int digit=x%10;
             output+=digit;
