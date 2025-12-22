@@ -1,22 +1,25 @@
-# BridgeLabz-Training
+🚀 BridgeLabz Training – Java & Git Learning Journey
+
+Welcome to my BridgeLabz Training Repository!
+This repository documents my day-wise learning progress, hands-on practice, and core concepts covered during the training program.
 
 📅 Day 1 – 16 December
-Topics Covered:
+🔧 Topics Covered:
 
 Introduction to Git and GitHub
 
 Purpose of Version Control Systems
 
-Difference between Git and GitHub
+Difference between Git vs GitHub
 
 Basic Git workflow
 
 Understanding project folder structure
 
-Importance of organizing files and directories properly
+Importance of organizing files and directories
 
 📅 Day 2 – 17 December
-Topics Covered:
+🔁 Topics Covered:
 
 Revision of Git and GitHub
 
@@ -32,45 +35,49 @@ git push
 
 Installation of Java Development Kit (JDK)
 
-Introduction to Java naming conventions
+Java naming conventions:
 
-Class naming conventions
+Class naming
 
-Variable naming conventions
+Variable naming
 
-Method naming conventions
+Method naming
 
-Importance of coding standards and best practices
+Importance of coding standards & best practices
 
 📅 Day 3 – 18 December
-Topics Covered:
+☕ Topics Covered:
 
-Introduction to Java programming language
+Introduction to Java Programming Language
 
-Overview of Java architecture
+Overview of Java Architecture
 
-Understanding JVM (Java Virtual Machine)
+Understanding:
 
-Understanding JRE and JDK
+JVM (Java Virtual Machine)
 
-Basic concepts of Java:
+JRE (Java Runtime Environment)
+
+JDK (Java Development Kit)
+
+Core Java basics:
 
 Variables
 
-Data types
+Data Types
 
-Input and Output
+Input & Output
 
 Writing and executing basic Java programs
 
 Completed first Java assignment
 
-Environment setup for Java
+Java environment setup
 
-Writing and running Java programs using Command Prompt / IDE
+Running Java programs using Command Prompt / IDE
 
 📅 Day 4 – 19 December
-Topics Covered:
+🔄 Topics Covered:
 
 Introduction to Control Flow Statements
 
@@ -99,7 +106,7 @@ Understanding nested loops
 Practiced control-flow based problems
 
 📅 Day 5 – 20 December
-Topics Covered:
+📊 Topics Covered:
 
 Introduction to Arrays in Java
 
@@ -109,14 +116,56 @@ One-dimensional arrays
 
 Multi-dimensional arrays
 
-Array declaration, initialization, and traversal
+Array declaration, initialization & traversal
 
-Use of loops with arrays
+Using loops with arrays
 
 Common array operations:
 
-Searching
+Searching elements
 
-Finding maximum and minimum elements
+Finding maximum & minimum
 
 Practiced array-based programming problems
+
+📅 Day 6 – 22 December
+🧵 Topics Covered:
+
+Introduction to String in Java
+
+Understanding String as an Object
+
+String memory concepts:
+
+String Constant Pool
+
+Heap Memory
+
+Difference between:
+
+String
+
+StringBuilder
+
+StringBuffer
+
+Using charAt() method
+
+Understanding ASCII values & character manipulation
+
+Working with strings without using built-in methods
+
+Real-world use cases of String handling
+
+Practiced string-based logical problems
+
+📌 About This Repository
+
+📚 Day-wise structured learning
+
+💻 Hands-on Java practice
+
+🔁 Continuous updates as training progresses
+
+🧠 Focus on logic building & core concepts
+
