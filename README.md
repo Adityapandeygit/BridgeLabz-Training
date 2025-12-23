@@ -1,171 +1,56 @@
 🚀 BridgeLabz Training – Java & Git Learning Journey
 
 Welcome to my BridgeLabz Training Repository!
-This repository documents my day-wise learning progress, hands-on practice, and core concepts covered during the training program.
+This repository showcases my day-wise learning progress, hands-on Java practice, and core Git & Java concepts covered during the BridgeLabz training program.
 
-📅 Day 1 – 16 December
-🔧 Topics Covered:
+📅 Day 1 – 16 December 🔧
 
-Introduction to Git and GitHub
+Topics Covered: Introduction to Git & GitHub, version control concepts, Git vs GitHub, basic Git workflow, project folder structure, directory organization.
+🔗 Practice: Git Basics & Version Control
 
-Purpose of Version Control Systems
+📅 Day 2 – 17 December 🔁
 
-Difference between Git vs GitHub
+Topics Covered: Git & GitHub revision, Git commands (git init, git add, git commit, git push), JDK installation, Java naming conventions, coding standards & best practices.
+🔗 Practice: Git Commands Practice
+ | Java Naming Conventions
 
-Basic Git workflow
+📅 Day 3 – 18 December ☕
 
-Understanding project folder structure
+Topics Covered: Java introduction, Java architecture, JVM, JRE, JDK, variables, data types, input/output, Java environment setup, CMD & IDE execution, first Java assignment.
+🔗 Practice: Basic Java Programs
 
-Importance of organizing files and directories
+📅 Day 4 – 19 December 🔄
 
-📅 Day 2 – 17 December
-🔁 Topics Covered:
+Topics Covered: Control flow statements, decision making (if, if-else, else-if, switch), loops (for, while, do-while), break, continue, nested loops.
+🔗 Practice: Control Flow Programs
 
-Revision of Git and GitHub
+📅 Day 5 – 20 December 📊
 
-Common Git commands:
+Topics Covered: Arrays in Java, 1D & 2D arrays, declaration, initialization, traversal, searching, max/min logic, array-based problem solving.
+🔗 Practice: Array Practice Problems
 
-git init
+📅 Day 6 – 22 December 🧵
 
-git add
+Topics Covered: String concepts, String as an object, String Constant Pool & Heap memory, String vs StringBuilder vs StringBuffer, charAt(), ASCII values, manual string manipulation.
+🔗 Practice: String Practice Problems
 
-git commit
-
-git push
-
-Installation of Java Development Kit (JDK)
-
-Java naming conventions:
-
-Class naming
-
-Variable naming
-
-Method naming
-
-Importance of coding standards & best practices
-
-📅 Day 3 – 18 December
-☕ Topics Covered:
-
-Introduction to Java Programming Language
-
-Overview of Java Architecture
-
-Understanding:
-
-JVM (Java Virtual Machine)
-
-JRE (Java Runtime Environment)
-
-JDK (Java Development Kit)
-
-Core Java basics:
-
-Variables
-
-Data Types
-
-Input & Output
-
-Writing and executing basic Java programs
-
-Completed first Java assignment
-
-Java environment setup
-
-Running Java programs using Command Prompt / IDE
-
-📅 Day 4 – 19 December
-🔄 Topics Covered:
-
-Introduction to Control Flow Statements
-
-Decision-making statements:
-
-if
-
-if-else
-
-else-if
-
-switch
-
-Looping statements:
-
-for
-
-while
-
-do-while
-
-Use of break and continue
-
-Understanding nested loops
-
-Practiced control-flow based problems
-
-📅 Day 5 – 20 December
-📊 Topics Covered:
-
-Introduction to Arrays in Java
-
-Types of arrays:
-
-One-dimensional arrays
-
-Multi-dimensional arrays
-
-Array declaration, initialization & traversal
-
-Using loops with arrays
-
-Common array operations:
-
-Searching elements
-
-Finding maximum & minimum
-
-Practiced array-based programming problems
-
-📅 Day 6 – 22 December
-🧵 Topics Covered:
-
-Introduction to String in Java
-
-Understanding String as an Object
-
-String memory concepts:
-
-String Constant Pool
-
-Heap Memory
-
-Difference between:
-
-String
-
-StringBuilder
-
-StringBuffer
-
-Using charAt() method
-
-Understanding ASCII values & character manipulation
-
-Working with strings without using built-in methods
-
-Real-world use cases of String handling
-
-Practiced string-based logical problems
+📂 Repository Structure
+BridgeLabz-Training/
+│── Day-01-Git/
+│── Day-02-Git-Commands/
+│── Day-02-Java-Basics/
+│── Day-03-Java-Introduction/
+│── Day-04-Control-Flow/
+│── Day-05-Arrays/
+│── Day-06-Strings/
+│── README.md
 
 📌 About This Repository
 
-📚 Day-wise structured learning
+📚 Day-wise structured learning with clickable practice links
 
-💻 Hands-on Java practice
+💻 Hands-on Java programs & Git exercises
 
-🔁 Continuous updates as training progresses
+🧠 Strong focus on logic building & core concepts
 
-🧠 Focus on logic building & core concepts
-
+🔁 Regularly updated as training progresses
