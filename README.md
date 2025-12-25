@@ -57,6 +57,8 @@ BridgeLabz-Training/
 │── Day-04-Control-Flow/
 │── Day-05-Arrays/
 │── Day-06-Strings/
+│── Day-07-Methods/
+│── Day-08-String-Practice/
 │── README.md
 
 📌 About This Repository
