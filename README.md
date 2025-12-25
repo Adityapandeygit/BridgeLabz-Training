@@ -34,6 +34,20 @@ Topics Covered: Arrays in Java, 1D & 2D arrays, declaration, initialization, tra
 Topics Covered: String concepts, String as an object, String Constant Pool & Heap memory, String vs StringBuilder vs StringBuffer, charAt(), ASCII values, manual string manipulation.
 🔗 Practice: String Practice Problems
 
+📅 Day 7 – 23 December 🧠
+
+Topics Covered:
+Methods in Java, method declaration & definition, method calling, parameters & return types, method overloading, scope of variables.
+
+🔗 Practice: Method-Based Programs & Problem Solving
+
+📅 Day 8 – 24 December ✨
+
+Topics Covered:
+Advanced and extra practice on Strings, logical string problems, pattern-based string questions, manual implementation without built-in methods.
+
+🔗 Practice: Extra String Practice Questions
+
 📂 Repository Structure
 BridgeLabz-Training/
 │── Day-01-Git/
