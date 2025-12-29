@@ -21,7 +21,6 @@ public class EmployeeAbsentOrPresent {
 	        return 0; 
 	    }
 	}
-	
 	public static int addPartTimeWages(int extrahours) {
 		int parttimewages = 20;
 		return extrahours*parttimewages;
@@ -29,12 +28,15 @@ public class EmployeeAbsentOrPresent {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		// UC-1
 		if (isEmployeePresent()) {
             System.out.println("Employee is Present");
         } else {
             System.out.println("Employee is Absent");
         }
+		//UC-2
 		calculateDailyEmployeeWage();
+		//UC-3
 		System.out.println("Enter the extra hours employee worked");
 		int extrahours = sc.nextInt();
 		addPartTimeWages(extrahours);
