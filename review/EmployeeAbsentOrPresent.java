@@ -26,6 +26,21 @@ public class EmployeeAbsentOrPresent {
 		return extrahours*parttimewages;
 	}
 	
+	public static int calculateMonthlyEmployeeWage() {
+	    int wagePerHour = 20;
+	    int fullDayHours = 8;
+	    int workingDaysPerMonth = 20;
+	    int monthlyWage = 0;
+	    for (int day = 1;day <=workingDaysPerMonth;day++) {
+	        boolean attendance = isEmployeePresent(); 
+	        if (attendance) {
+	            monthlyWage += wagePerHour * fullDayHours;
+	        }
+	    }
+
+	    return monthlyWage;
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// UC-1
@@ -58,6 +73,9 @@ public class EmployeeAbsentOrPresent {
 			System.out.println("Employee is Absent");
 			break;
 		}
+		
+		//UC-5
+		calculateMonthlyEmployeeWage();
 		
 		
 	}
