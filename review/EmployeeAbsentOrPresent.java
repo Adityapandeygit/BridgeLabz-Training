@@ -41,6 +41,28 @@ public class EmployeeAbsentOrPresent {
 	    return monthlyWage;
 	}
 	
+	public static int calculateWageTillCondition() {
+	    int wagePerHour = 20;
+	    int fullDayHours = 8;
+	    int maxWorkingDays = 20;
+	    int maxWorkingHours = 100;
+	    int totalWorkingDays = 0;
+	    int totalWorkingHours = 0;
+	    int totalWage = 0;
+
+	    while (totalWorkingDays<maxWorkingDays && totalWorkingHours<maxWorkingHours) {
+	        boolean attendance = isEmployeePresent();
+	        totalWorkingDays++;
+	        if (attendance) {
+	            totalWorkingHours += fullDayHours;
+	            totalWage += fullDayHours*wagePerHour;
+	        }
+	    }
+
+	    return totalWage;
+	}
+
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// UC-1
@@ -75,7 +97,11 @@ public class EmployeeAbsentOrPresent {
 		}
 		
 		//UC-5
+		System.out.println("Monthly wages of the employee");
 		calculateMonthlyEmployeeWage();
+		//UC-6
+		System.out.println("Wages till the given condition :");
+		calculateWageTillCondition();
 		
 		
 	}
