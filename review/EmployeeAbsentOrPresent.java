@@ -40,5 +40,25 @@ public class EmployeeAbsentOrPresent {
 		System.out.println("Enter the extra hours employee worked");
 		int extrahours = sc.nextInt();
 		addPartTimeWages(extrahours);
+		
+		//UC-4
+		System.out.println("Enter the employee attendence(0 or 1)");
+		int attendence = sc.nextInt();
+		
+		switch(attendence) {
+		case 1:
+			System.out.println("Employee is Present");
+			calculateDailyEmployeeWage();
+			
+			System.out.println("Enter the extra hours employee worked");
+			int extrahours1 = sc.nextInt();
+			addPartTimeWages(extrahours1);
+			break;
+		case 2:
+			System.out.println("Employee is Absent");
+			break;
+		}
+		
+		
 	}
 }
