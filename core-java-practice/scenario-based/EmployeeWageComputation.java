@@ -28,7 +28,7 @@ public class EmployeeWageComputation {
             System.out.println("Employee is Full Time");
         } 
         else {
-            System.out.println("Employee is Absent");
+            System.out.println("Employee is Absent today");
         }
 	}
 	
