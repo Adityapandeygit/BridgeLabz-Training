@@ -100,33 +100,6 @@ Solved basic leetcode problems to improve logic and problem-solving skills:
 
 Solved basic Java programs focused on arithmetic operations and formulas:
 
-- Add Two Numbers  
-- Area of Circle  
-- Average of Three Numbers  
-- Basic Calculator  
-- Celsius to Fahrenheit Conversion  
-- Division Solve  
-- Double Operations  
-- Find Age  
-- Find Distance  
-- Hand Shake  
-- Height Conversion  
-- Integer Operations  
-- Kilometers to Miles Conversion  
-- Pen Distribution  
-- Perimeter of Rectangle  
-- Power Calculation  
-- Price Calculator  
-- Printing Welcome  
-- Profit Loss Calculation  
-- Sam Average  
-- Simple Interest  
-- Square Perimeter  
-- Triangle Area  
-- University Discount  
-- Volume of Cylinder  
-- Volume of Earth  
-
 ## 18 December (Wednesday)
 
 ### Core Java – Programming Elements (Continued)
@@ -153,41 +126,10 @@ Continued practicing with additional Java programs focusing on advanced operatio
 Practiced and implemented **Control Flow programs** including:
 
 **Conditional Statements (if-else, switch-case):**
-- Number Sign Check
-- Odd Even Check
-- Voting Eligibility
-- Largest of Three Numbers
-- Smallest of Three Numbers
-- Leap Year Check
-- Day of Week
-- Grade Calculator
-- Employee Bonus
-- Friends Check
-- Spring Season
-- BMI Calculator
-- Divisible by 5
 
 **Loops (for, while, do-while):**
-- Count Down
-- Multiplication Table
-- Factorial Number (Multiple approaches)
-- Factors (Multiple approaches)
-- Greatest Factor (Multiple approaches)
-- Power Number (Multiple approaches)
-- Multiples (Multiple approaches)
-- Natural Number Sum (Multiple approaches)
-- FizzBuzz (Multiple approaches)
-- Sum Until Zero
-- Sum Break
-- Rocket Launch Countdown
 
 **Advanced Logic:**
-- Armstrong Number
-- Prime Number Check
-- Digit Count
-- Abundant Number
-- Harshad Number
-- Calculator
 
 > 📁 *All Control Flow programs are available inside* `gcr-codebase/control-flow`*.*  
 > 🔗 [Browse Control Flow programs](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/ControlFlow)
@@ -199,29 +141,10 @@ Practiced and implemented **Control Flow programs** including:
 Practiced and implemented **Array-based programs** covering fundamental array operations and problem-solving:
 
 **One-Dimensional Arrays:**
-- BMI Array
-- Factors Array
-- FizzBuzz Array
-- Friends Array
-- Mean Height Calculation
-- Multiplication Table Array
-- Multiplication Table Range
-- Number Check Array
-- Odd Even Array
-- Reverse Number Array
-- Store Sum Array
-- Student Grade Array
-- Vote Check Array
-- Zara Bonus Calculation
 
 **Two-Dimensional Arrays (Matrices):**
-- BMI Matrix
-- Copy 2D to 1D Array
-- Student Grade Matrix
 
 **Advanced Array Operations:**
-- Digit Frequency
-- Digit Maximum (Multiple approaches)
 
 > 📁 *All Array programs are available inside* `gcr-codebase/arrays`*.*  
 > 🔗 [Browse Array programs](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/arrays)
@@ -287,38 +210,6 @@ Practiced and implemented **Method-based programs** covering function creation, 
 - Code reusability and modularity
 
 **Practical Implementations:**
-- BMI Calculator
-- Simple Interest Calculator
-- Wind Chill Calculator
-- Length Converter
-- Unit Converter
-- Kilometers to Miles Conversion
-- Trigonometric Functions Calculator
-- Quadratic Equation Solver
-- Remainder and Quotient Finder
-- Number Analyzer and Checker
-- Number Properties and Utilities
-- Digit Analyzer and Utilities
-- Factor Operations and Utilities
-- Natural Number Sum
-- Min/Max of Three Numbers
-- Student Scorecard
-- Student Vote Checker
-- Friend Comparison
-- Football Team Height
-- Chocolate Distribution
-- Handshake Counter
-- Collinear Points
-- Line and Distance Calculations
-- Matrix Operations (Basic and Advanced)
-- Calendar Display
-- OTP Generator
-- Random Stats
-- Triangular Park Run
-- Spring Season Checker
-- Year Check
-- Zara Bonus Calculator
-- Sum Compare
 
 > 📁 *All Method programs are available inside* `gcr-codebase/methods`*.*  
 > 🔗 [Browse Method programs](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
@@ -376,9 +267,6 @@ Solved additional practice questions covering various Java concepts and algorith
 
 Solved real-world scenario-based problems to apply Java concepts in practical contexts:
 
-- **Bus Route** – Track total distance traveled by a passenger with multiple stops and exit confirmation
-- **Lucky Draw** – Implement a lucky draw system with winning conditions based on number divisibility
-
 > 📁 *All scenario-based solutions are available inside the* `scenario-based` *folder.*  
 > 🔗 [Browse Scenario-Based solutions](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)
 
@@ -393,13 +281,6 @@ Solved real-world scenario-based problems to apply Java concepts in practical co
 ### Core Java – Scenario-Based Problems
 
 Solved 6 real-world scenario-based problems to apply Java concepts in practical contexts:
-
-- **Employee Wage Computation** – Calculate employee wages based on attendance, work type (full-time/part-time), monthly calculations, and constraints on total working hours and days
-- **Line Comparison Computation** – Calculate line lengths using Cartesian coordinates and compare two lines using equals() and compareTo() methods
-- **DigiWatch** – Digital watch simulation that displays time from 00:00 to 13:00 using nested loops
-- **FitTrack** – Fitness tracker that calculates total and average push-ups for a week, handling rest days (0 push-ups)
-- **LibFine** – Library fine calculator that computes fines for overdue books based on return dates and due dates
-- **MovieBook** – Movie booking system with different movie types (regular, 3D, IMAX), seat types (gold, silver), and optional snacks
 
 > 📁 *All scenario-based solutions are available inside the* `scenario-based` *folder.*  
 > 🔗 [Browse Scenario-Based solutions](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)
@@ -427,13 +308,6 @@ Started learning **Object-Oriented Programming (OOPs)** concepts by practicing w
 - Encapsulation basics
 
 **Practical Implementations:**
-- **BankAccount** – Bank account management with balance operations
-- **Book** – Book information management system
-- **Item** – Item details and properties management
-- **MobilePhone** – Mobile phone specifications and operations
-- **MovieTicket** – Movie ticket booking and pricing system
-- **PalindromeChecker** – Palindrome validation using OOPs approach
-- **Student** – Student information and grade management system
 
 > 📁 *All OOPs practice programs are available inside* `oops-practice/gcr-codebase/classes-and-object`*.*  
 > 🔗 [Browse OOPs practice programs](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-and-object)
@@ -465,19 +339,6 @@ Continued learning **Object-Oriented Programming (OOPs)** concepts by practicing
 - Accessing static members
 
 **Practical Implementations:**
-- **BankAccountAccess** – Bank account with access modifiers and inheritance
-- **BookAccess** – Book management with access modifiers and inheritance
-- **EmployeeAccess** – Employee management with access modifiers and inheritance
-- **StudentAccess** – Student management with access modifiers and inheritance
-- **Book** – Book class with default and parameterized constructors
-- **CircleConstructor** – Circle with constructor chaining
-- **HotelBooking** – Hotel booking with default, parameterized, and copy constructors
-- **Person** – Person class demonstrating copy constructor
-- **CarRental** – Car rental system with encapsulation
-- **LibBook** – Library book management with encapsulation
-- **Course** – Course management with static variables and methods
-- **Vehicle** – Vehicle registration with static variables and methods
-- **Product** – Product management with static counter
 
 > 📁 *All OOPs practice programs are available inside* `oops-practice/gcr-codebase/constructors-variables-access`*.*  
 > 🔗 [Browse OOPs practice programs](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/constructors-variables-access)
