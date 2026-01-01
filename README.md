@@ -343,6 +343,58 @@ Continued learning **Object-Oriented Programming (OOPs)** concepts by practicing
 > 📁 *All OOPs practice programs are available inside* `oops-practice/gcr-codebase/constructors-variables-access`*.*  
 > 🔗 [Browse OOPs practice programs](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/constructors-variables-access)
 
+## 📅 Week 4 – OOPs Keywords & Object Behavior
+
+**[1 January 2026]**
+
+---
+
+## 1 January 2026 (Thursday)
+
+### OOPs Concepts – `this`, `static`, `final` & `instanceof`
+
+Studied and practiced core **Object-Oriented Programming keywords and operators** that define object behavior, memory management, and runtime type handling in Java.  
+Hands-on programs were implemented to clearly understand real-world usage and best practices.
+**Concepts Covered:**
+- Final variables (constants)
+- Final methods (prevent overriding)
+- Final classes (prevent inheritance)
+
+**Key Learnings:**
+- Creating immutable values
+- Ensuring method behavior consistency
+- Designing secure and non-extendable classes
+
+---
+
+### 🔹 `instanceof` Operator
+
+The `instanceof` operator is used for **runtime type checking** in inheritance hierarchies.
+
+**Key Learnings:**
+- Safe type casting in polymorphism
+- Preventing `ClassCastException`
+- Checking parent–child relationships at runtime
+
+---
+
+### ✅ Learning Outcomes
+
+- Strong understanding of **object reference and identity**
+- Clear distinction between **class-level vs instance-level behavior**
+- Improved code safety using `final`
+- Confident runtime type checks using `instanceof`
+- Better JVM memory and design awareness
+
+---
+
+> 📁 *All practical programs related to these concepts are available here:*  
+> 🔗 **this, static, final & instanceof Practice**  
+> https://github.com/Adityapandeygit/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/static-this-final-instanceOf
+
+---
+
+
 ---
 
 ## Repository
