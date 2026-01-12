@@ -1,0 +1,7 @@
+package oops_practice.scanrio_based.InventoryManagementSystem;
+
+public class OutOfStockException extends Exception {
+	   public OutOfStockException(String message) {
+	       super(message);
+	   }
+}
