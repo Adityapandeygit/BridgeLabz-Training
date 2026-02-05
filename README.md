@@ -240,6 +240,36 @@ BridgeLabz-Training/
     *   **Collections Scenarios:** Implemented `Restaurant` (HashMap & Exception Handling) and `BackupScheduler` (Priority Queue) in `scenario-based` folder.
         *   [Browse Collection Scenarios](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based)
 
+*   **30-Jan-2026 (Friday):**
+    *   **Regex:** Created `Regex` directory in `collections-practice`. Implemented `RegexPractice` covering username validation, email extraction, censoring, and other regex patterns.
+        *   [Browse Regex Practice](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java_regex)
+    *   **JUnit:** Created `JUnit` directory in `collections-practice` with Maven structure. Implemented and tested various classes: `Calculator`, `StringUtils`, `ListManager`, `DatabaseConnection`, `FileProcessor`, `EvenTest`, and `ExceptionTest`.
+        *   [Browse JUnit Practice](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/junit)
+
+*   **01-Feb-2026 (Sunday):**
+    *   **OOPS Scenarios:** Implemented **FutureLogistics** scenario-based problem involving `GoodsTransport`, `BrickTransport`, and `TimberTransport` with logic for vehicle selection and charge calculation.
+        *   [Browse Scenario-Based solutions](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/futureLogistic)
+
+*   **02-Feb-2026 (Monday):**
+    *   **Collections Scenarios:** Implemented **StreamBuzz** scenario-based problem (Creator Stats).
+        *   [Browse StreamBuzz](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/streamBuzz)
+    *   **Reflection:** Implemented 12 Reflection API examples in `collections-practice` covering methods, fields, dynamic proxy, and dependency injection.
+        *   [Browse Reflection Examples](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java_reflections)
+    *   **Annotations:** Implemented 12 Annotation examples including `@Override`, `@Deprecated`, `@SuppressWarnings`, and custom annotations like `@Loggable` and `@Priority`.
+        *   [Browse Annotation Examples](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java_annotations)
+    *   **IO Programming:** Created `IOprogramming-practice` branch. Implemented **CSV Data Handling** (12 examples) and **JSON Data Handling** (9 examples) involving reading, writing, filtering, and masking data.
+        *   [Browse CSV Examples](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/io-programming-practice/io-programming-practice/gcr-codebase/csv-flie-handling)
+        *   [Browse JSON Examples](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/io-programming-practice/io-programming-practice/gcr-codebase/json-file-handling)
+
+*   **03-Feb-2026 (Tuesday):**
+    *   **DSA Scenarios:** Implemented **RobotAuditSystem** (Custom Exceptions) (Exception Handling) in `scenario-based` folder.
+        *   [Browse Scenario-Based solutions](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/factoryRobotHazardAnalyzer)
+
+*   **04-Feb-2026 (Wednesday):**
+    *   **Java 8 Features:** Implemented **Lambda Expressions** examples including `SmartLight`, `ShopSort`, `AlertFilter`, etc. in `LambdaExpressions` directory. Also implemented 13 **Functional Interface** examples covering custom interfaces, static/default methods, and marker interfaces in `FunctionalInterface` directory.
+        *   [Browse Lambda Expressions](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/java-8-features-practice/java-8-features/gcr-codebase/lambda-expression)
+        *   [Browse Functional Interfaces](https://github.com/Adityapandeygit/BridgeLabz-Training/tree/java-8-features-practice/java-8-features/gcr-codebase/functional-interface)
+
 ---
 
 ## Repository Info
