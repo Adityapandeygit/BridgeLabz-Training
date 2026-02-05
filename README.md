@@ -273,7 +273,7 @@ BridgeLabz-Training/
 ---
 
 ## Repository Info
-**GitHub:** [https://github.com/skyy4/BridgeLabs-Training](https://github.com/Adityapandeygit/BridgeLabz-Training)
+**GitHub:** [https://github.com/Adityapandeygit/BridgeLabz-Training](https://github.com/Adityapandeygit/BridgeLabz-Training)
 
 ### How to Run
 1.  **Clone:** `git clone https://github.com/Adityapandeygit/BridgeLabz-Training`
