@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AddressBookSystem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">AddressBook.SonarQube</a> &gt; <span class="el_source">AddressBookSystem.java</span></div><h1>AddressBookSystem.java</h1><pre class="source lang-java linenums">package AddressBook.SonarQube;
+
+import java.util.HashMap;
+import java.util.Map;
+
+// Use Case - 6
+<span class="fc" id="L7">public class AddressBookSystem {</span>
+<span class="fc" id="L8">	 Map&lt;String, AddressBookDao&gt; addressBooks = new HashMap&lt;&gt;();</span>
+	 // Create Address Book 
+	 public boolean createAddressBook(String name) {
+<span class="fc bfc" id="L11" title="All 2 branches covered.">		 if(addressBooks.containsKey(name)) {</span>
+<span class="fc" id="L12">			 return false;</span>
+		 }
+<span class="fc" id="L14">		 addressBooks.put(name, new AddressBookDao());</span>
+<span class="fc" id="L15">		 return true;</span>
+	 }
+	 public AddressBookDao getAddressBook(String name) {
+<span class="fc" id="L18">		 return addressBooks.get(name);</span>
+	 }
+	 public void displayAddressBook() {
+<span class="nc bnc" id="L21" title="All 2 branches missed.">		 if(addressBooks.isEmpty()) {</span>
+<span class="nc" id="L22">			 System.out.println(&quot;No address book available .&quot;);</span>
+		 }
+<span class="nc" id="L24">		 System.out.println(&quot;Available address book are : &quot;);</span>
+<span class="nc" id="L25">		 System.out.println();</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">		 for(String name :addressBooks.keySet()) {</span>
+<span class="nc" id="L27">			 System.out.println(name);</span>
+			 
+<span class="nc" id="L29">		 }</span>
+<span class="nc" id="L30">	 }</span>
+	 
+	 // Use Case - 8
+	 public void searchPerson(String value) {
+<span class="fc" id="L34">		    boolean found = false;</span>
+<span class="pc bpc" id="L35" title="1 of 2 branches missed.">		    for (AddressBookDao book : addressBooks.values()) {</span>
+<span class="nc bnc" id="L36" title="All 2 branches missed.">		        for (Contacts c : book.getAllContacts()) {</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">		            if (c.getCity().equalsIgnoreCase(value) ||</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">		                c.getState().equalsIgnoreCase(value)) {</span>
+
+<span class="nc" id="L40">		                System.out.println(c.getFirstName()+&quot; &quot;+c.getLastName());</span>
+<span class="nc" id="L41">		                found = true;</span>
+		            }
+<span class="nc" id="L43">		        }</span>
+<span class="nc" id="L44">		    }</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">		    if (!found) {</span>
+<span class="fc" id="L46">		        System.out.println(&quot;No person found in given City/State&quot;);</span>
+		    }
+<span class="fc" id="L48">	 }</span>
+	 
+	// Use Case - 9
+	 public void viewPersonsByCity(String city) {
+<span class="nc" id="L52">		    boolean found = false;</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">		    for (AddressBookDao book : addressBooks.values()) {</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">		        for (Contacts c : book.getAllContacts()) {</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">		            if (c.getCity().equalsIgnoreCase(city)) {</span>
+<span class="nc" id="L56">		                System.out.println(c.getFirstName() + &quot; &quot; + c.getLastName());</span>
+<span class="nc" id="L57">		                found = true;</span>
+		            }
+<span class="nc" id="L59">		        }</span>
+<span class="nc" id="L60">		    }</span>
+<span class="nc bnc" id="L61" title="All 2 branches missed.">		    if (!found) {</span>
+<span class="nc" id="L62">		        System.out.println(&quot;No persons found in city: &quot; + city);</span>
+		    }
+<span class="nc" id="L64">	 }</span>
+	 
+	 public void viewPersonsByState(String state) {
+<span class="nc" id="L67">		    boolean found = false;</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">		    for (AddressBookDao book : addressBooks.values()) {</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">		        for (Contacts c : book.getAllContacts()) {</span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">		            if (c.getState().equalsIgnoreCase(state)) {</span>
+<span class="nc" id="L71">		                System.out.println(c.getFirstName() + &quot; &quot; + c.getLastName());</span>
+<span class="nc" id="L72">		                found = true;</span>
+		            }
+<span class="nc" id="L74">		        }</span>
+<span class="nc" id="L75">		    }</span>
+<span class="nc bnc" id="L76" title="All 2 branches missed.">		    if (!found) {</span>
+<span class="nc" id="L77">		        System.out.println(&quot;No persons found in state: &quot; + state);</span>
+		    }
+<span class="nc" id="L79">	 }</span>
+	 
+	 // Use Case - 10
+	// Count persons by City
+	 public void countByCity(String city) {
+<span class="nc" id="L84">	     int count = 0;</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">	     for (AddressBookDao book : addressBooks.values()) {</span>
+<span class="nc bnc" id="L86" title="All 2 branches missed.">	         for (Contacts c : book.getAllContacts()) {</span>
+<span class="nc bnc" id="L87" title="All 2 branches missed.">	             if (c.getCity().equalsIgnoreCase(city)) {</span>
+<span class="nc" id="L88">	                 count++;</span>
+	             }
+<span class="nc" id="L90">	         }</span>
+<span class="nc" id="L91">	     }</span>
+<span class="nc bnc" id="L92" title="All 2 branches missed.">	     if (count == 0) {</span>
+<span class="nc" id="L93">	         System.out.println(&quot;No contacts found in city: &quot; + city);</span>
+	     } else {
+<span class="nc" id="L95">	         System.out.println(&quot;Total contacts in city &quot; + city + &quot; : &quot; + count);</span>
+	     }
+<span class="nc" id="L97">	 }</span>
+	 // Count persons by State
+	 public void countByState(String state) {
+<span class="nc" id="L100">	     int count = 0;</span>
+<span class="nc bnc" id="L101" title="All 2 branches missed.">	     for (AddressBookDao book : addressBooks.values()) {</span>
+<span class="nc bnc" id="L102" title="All 2 branches missed.">	         for (Contacts c : book.getAllContacts()) {</span>
+<span class="nc bnc" id="L103" title="All 2 branches missed.">	             if (c.getState().equalsIgnoreCase(state)) {</span>
+<span class="nc" id="L104">	                 count++;</span>
+	             }
+<span class="nc" id="L106">	         }</span>
+<span class="nc" id="L107">	     }</span>
+<span class="nc bnc" id="L108" title="All 2 branches missed.">	     if (count == 0) {</span>
+<span class="nc" id="L109">	         System.out.println(&quot;No contacts found in state: &quot; + state);</span>
+	     } else {
+<span class="nc" id="L111">	         System.out.println(&quot;Total contacts in state &quot; + state + &quot; : &quot; + count);</span>
+	     }
+<span class="nc" id="L113">	 }</span>
+	
+}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
