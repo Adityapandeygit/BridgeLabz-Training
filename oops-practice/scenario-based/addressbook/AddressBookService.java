@@ -207,7 +207,88 @@ public class AddressBookService {
     }
 
     
+ // UC-13 Save Contacts
+    public void saveContactsToFile() {
+        if (currentBook == null) {
+            System.out.println("Please select an Address Book first");
+            return;
+        }
+
+        System.out.print("Enter file name (example contacts.txt): ");
+        String fileName = sc.nextLine();
+
+        currentBook.saveToFile(fileName);
+    }
+
+    // UC-13 Load Contacts
+    public void loadContactsFromFile() {
+        if (currentBook == null) {
+            System.out.println("Please select an Address Book first");
+            return;
+        }
+
+        System.out.print("Enter file name to load: ");
+        String fileName = sc.nextLine();
+
+        currentBook.loadFromFile(fileName);
+    }
+
+ // Save CSV
+    public void saveContactsToCSV() {
+
+        if (currentBook == null) {
+            System.out.println("Select Address Book First");
+            return;
+        }
+
+        System.out.print("Enter CSV file name: ");
+        String file = sc.nextLine();
+
+        currentBook.saveToCSV(file);
+    }
+
+    // Load CSV
+    public void loadContactsFromCSV() {
+
+        if (currentBook == null) {
+            System.out.println("Select Address Book First");
+            return;
+        }
+
+        System.out.print("Enter CSV file name: ");
+        String file = sc.nextLine();
+
+        currentBook.loadFromCSV(file);
+    }
     
+ // Save JSON
+    public void saveContactsToJSON() {
+
+        if (currentBook == null) {
+            System.out.println("Select Address Book First");
+            return;
+        }
+
+        System.out.print("Enter JSON file name: ");
+        String file = sc.nextLine();
+
+        currentBook.saveToJSON(file);
+    }
+
+    // Load JSON
+    public void loadContactsFromJSON() {
+
+        if (currentBook == null) {
+            System.out.println("Select Address Book First");
+            return;
+        }
+
+        System.out.print("Enter JSON file name: ");
+        String file = sc.nextLine();
+
+        currentBook.loadFromJSON(file);
+    }
+
     //  HELPER 
 
     private Contacts takeContactInput() {

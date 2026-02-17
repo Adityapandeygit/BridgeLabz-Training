@@ -82,8 +82,7 @@ public class Contacts {
         this.email = email;
     }
 	
-    public String toString() {
-        return "Name   : " + firstName + " " + lastName + "\n" +
+    public String toString() {return "Name   : " + firstName + " " + lastName + "\n" +
                "Address: " + address + "\n" +
                "City   : " + city + "\n" +
                "State  : " + state + "\n" +

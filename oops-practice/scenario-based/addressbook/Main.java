@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
         System.out.println("Welcome to Address Book Program");
+        System.out.println();
 
         Scanner sc = new Scanner(System.in);
         AddressBookService service = new AddressBookService(sc);
 
         while (true) {
-            System.out.println("\n1. Create Address Book");
+            System.out.println("1. Create Address Book");
             System.out.println("2. Select Address Book");
             System.out.println("3. Add Contact");
             System.out.println("4. Edit Contact");
@@ -25,6 +26,12 @@ public class Main {
             System.out.println("13. Sort Contacts by State");
             System.out.println("14. Sort Contacts by Zip");
             System.out.println("15. Sort Contacts Alphabetically by Name");
+            System.out.println("16. Save Contacts To File");
+            System.out.println("17. Load Contacts From File");
+            System.out.println("18. Save Contacts To CSV");
+            System.out.println("19. Load Contacts From CSV");
+            System.out.println("20. Save Contacts To JSON");
+            System.out.println("21. Load Contacts From JSON");
 
             
             System.out.println("ENTER THE CHOICE:");
@@ -85,6 +92,24 @@ public class Main {
                     break;
                 case 15:
                     service.sortByName();
+                    break;
+                case 16:
+                    service.saveContactsToFile();
+                    break;
+                case 17:
+                    service.loadContactsFromFile();
+                    break;
+                case 18:
+                    service.saveContactsToCSV();
+                    break;
+                case 19:
+                    service.loadContactsFromCSV();
+                    break;
+                case 20:
+                    service.saveContactsToJSON();
+                    break;
+                case 21:
+                    service.loadContactsFromJSON();
                     break;
                 default:
                     System.out.println("Invalid choice!");
