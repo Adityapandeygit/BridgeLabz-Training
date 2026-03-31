@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+demo,AddressBook.SonarQube,AddressBookService,412,16,36,0,134,6,34,2,16,2
+demo,AddressBook.SonarQube,Calculator,0,15,0,0,0,4,0,4,0,4
+demo,AddressBook.SonarQube,Main,148,0,16,0,61,0,17,0,2,0
+demo,AddressBook.SonarQube,Contacts,38,63,0,0,9,26,7,11,7,11
+demo,AddressBook.SonarQube,AddressBookDao,44,124,8,12,16,29,13,9,5,7
+demo,AddressBook.SonarQube,AddressBookSystem,253,47,44,4,59,12,28,5,5,4
