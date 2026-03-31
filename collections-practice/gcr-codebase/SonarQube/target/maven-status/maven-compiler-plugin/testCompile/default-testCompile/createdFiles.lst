@@ -1,0 +1,5 @@
+AddressBook\SonarQube\CalculatorTest.class
+AddressBook\SonarQube\ContactsTest.class
+AddressBook\SonarQube\AddressBookDaoTest.class
+AddressBook\SonarQube\AddressBookServiceTest.class
+AddressBook\SonarQube\AddressBookSystemTest.class
