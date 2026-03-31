@@ -347,10 +347,10 @@ BridgeLabz-Training/
 ---
 
 ## Repository Info
-**GitHub:** github.com/skyy4/BridgeLabs-Training
+**GitHub:** github.com/Adityapandeygit
 
 ### How to Run
-1.  **Clone:** `git clone https://github.com/skyy4/BridgeLabs-Training.git`
+1.  **Clone:** `git clone https://github.com/Adityapandeygit/BridgeLabz-Training.git`
 2.  **Navigate:** Go to the specific directory (e.g., `core-java-practice/gcr-codebase/control-flow`).
 
 ---
