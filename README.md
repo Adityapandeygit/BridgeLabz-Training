@@ -1,4 +1,3 @@
- # BridgeLabz-Training
 
 ---
 
