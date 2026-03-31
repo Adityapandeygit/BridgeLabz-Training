@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AddressBookService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">AddressBook.SonarQube</a> &gt; <span class="el_source">AddressBookService.java</span></div><h1>AddressBookService.java</h1><pre class="source lang-java linenums">package AddressBook.SonarQube;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class AddressBookService {
+
+<span class="fc" id="L9">    private AddressBookSystem system = new AddressBookSystem();</span>
+    private AddressBookDao currentBook;
+    private Scanner sc;
+<span class="fc" id="L12">    public AddressBookService(Scanner sc) {</span>
+<span class="fc" id="L13">        this.sc = sc;</span>
+<span class="fc" id="L14">    }</span>
+
+    //  ADDRESS BOOK 
+
+    public void createAddressBook() {
+<span class="nc" id="L19">        System.out.print(&quot;Enter the address book name: &quot;);</span>
+<span class="nc" id="L20">        String name = sc.nextLine();</span>
+
+<span class="nc bnc" id="L22" title="All 2 branches missed.">        if (system.createAddressBook(name)) {</span>
+<span class="nc" id="L23">            System.out.println(&quot;Address Book created successfully&quot;);</span>
+        } else {
+<span class="nc" id="L25">            System.out.println(&quot;Address Book already exists&quot;);</span>
+        }
+<span class="nc" id="L27">    }</span>
+
+    public void selectAddressBook() {
+<span class="nc" id="L30">        System.out.print(&quot;Enter Address Book Name: &quot;);</span>
+<span class="nc" id="L31">        String name = sc.nextLine();</span>
+
+<span class="nc" id="L33">        currentBook = system.getAddressBook(name);</span>
+<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L35">            System.out.println(&quot;Address Book not found&quot;);</span>
+        } else {
+<span class="nc" id="L37">            System.out.println(&quot;Address Book selected: &quot; + name);</span>
+        }
+<span class="nc" id="L39">    }</span>
+    // Use Case - 8
+    public void searchPerson(String name) {
+<span class="fc" id="L42">    	system.searchPerson(name);</span>
+<span class="fc" id="L43">    }</span>
+    
+    // Use Case - 9
+    public void viewByCity(String city) {
+<span class="nc" id="L47">        system.viewPersonsByCity(city);</span>
+<span class="nc" id="L48">    }</span>
+    public void viewByState(String state) {
+<span class="nc" id="L50">        system.viewPersonsByState(state);</span>
+<span class="nc" id="L51">    }</span>
+    
+    // Use Case - 10
+    public void countByCity(String city) {
+<span class="nc" id="L55">        system.countByCity(city);</span>
+<span class="nc" id="L56">    }</span>
+    public void countByState(String state) {
+<span class="nc" id="L58">        system.countByState(state);</span>
+<span class="nc" id="L59">    }</span>
+    
+    
+    // CONTACT OPERATIONS 
+
+    public void addContact() {
+<span class="nc bnc" id="L65" title="All 2 branches missed.">    	if (currentBook == null) {</span>
+<span class="nc" id="L66">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L67">            return;</span>
+        }
+<span class="nc" id="L69">        Contacts contact = takeContactInput();</span>
+<span class="nc" id="L70">        boolean added = currentBook.addContact(contact);</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">        if (added) {</span>
+<span class="nc" id="L72">            System.out.println(&quot;Contact added successfully&quot;);</span>
+        } else {
+<span class="nc" id="L74">            System.out.println(&quot;Duplicate contact found. Contact not added.&quot;);</span>
+        }
+<span class="nc" id="L76">    }</span>
+
+    public void editContact() {
+<span class="nc bnc" id="L79" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L80">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L81">            return;</span>
+        }
+
+<span class="nc" id="L84">        System.out.print(&quot;Enter First Name: &quot;);</span>
+<span class="nc" id="L85">        String firstName = sc.nextLine();</span>
+<span class="nc" id="L86">        System.out.print(&quot;Enter Last Name: &quot;);</span>
+<span class="nc" id="L87">        String lastName = sc.nextLine();</span>
+
+<span class="nc" id="L89">        Contacts contact = currentBook.findByName(firstName, lastName);</span>
+<span class="nc bnc" id="L90" title="All 2 branches missed.">        if (contact == null) {</span>
+<span class="nc" id="L91">            System.out.println(&quot;Contact not found&quot;);</span>
+<span class="nc" id="L92">            return;</span>
+        }
+
+<span class="nc" id="L95">        System.out.println(&quot;Enter new details:&quot;);</span>
+<span class="nc" id="L96">        Contacts updated = takeContactInput();</span>
+
+<span class="nc" id="L98">        currentBook.updateContact(</span>
+                contact,
+<span class="nc" id="L100">                updated.getAddress(),</span>
+<span class="nc" id="L101">                updated.getCity(),</span>
+<span class="nc" id="L102">                updated.getState(),</span>
+<span class="nc" id="L103">                updated.getZip(),</span>
+<span class="nc" id="L104">                updated.getPhoneNumber(),</span>
+<span class="nc" id="L105">                updated.getEmail()</span>
+        );
+
+<span class="nc" id="L108">        System.out.println(&quot;Contact updated successfully&quot;);</span>
+<span class="nc" id="L109">    }</span>
+
+    public void deleteContact() {
+<span class="nc bnc" id="L112" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L113">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L114">            return;</span>
+        }
+
+<span class="nc" id="L117">        System.out.print(&quot;Enter First Name: &quot;);</span>
+<span class="nc" id="L118">        String firstName = sc.nextLine();</span>
+<span class="nc" id="L119">        System.out.print(&quot;Enter Last Name: &quot;);</span>
+<span class="nc" id="L120">        String lastName = sc.nextLine();</span>
+
+<span class="nc" id="L122">        boolean deleted = currentBook.deleteContactByName(firstName, lastName);</span>
+<span class="nc bnc" id="L123" title="All 2 branches missed.">        System.out.println(deleted ? &quot;Contact deleted successfully&quot; : &quot;Contact not found&quot;);</span>
+<span class="nc" id="L124">    }</span>
+
+    public void addMultipleContacts() {
+<span class="nc bnc" id="L127" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L128">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L129">            return;</span>
+        }
+
+<span class="nc" id="L132">        System.out.print(&quot;Enter number of contacts to add: &quot;);</span>
+<span class="nc" id="L133">        int n = sc.nextInt();</span>
+<span class="nc" id="L134">        sc.nextLine(); </span>
+
+<span class="nc" id="L136">        List&lt;Contacts&gt; list = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L137" title="All 2 branches missed.">        for (int i = 1; i &lt;= n; i++) {</span>
+<span class="nc" id="L138">            System.out.println(&quot;\nEnter details for Contact &quot; + i);</span>
+<span class="nc" id="L139">            Contacts contact = takeContactInput();</span>
+<span class="nc bnc" id="L140" title="All 2 branches missed.">            if (currentBook.isDuplicate(contact.getFirstName(), contact.getLastName())) {</span>
+<span class="nc" id="L141">                System.out.println(&quot;Duplicate contact skipped: &quot;</span>
+<span class="nc" id="L142">                        + contact.getFirstName() + &quot; &quot; + contact.getLastName());</span>
+            } else {
+<span class="nc" id="L144">                list.add(contact);</span>
+            }
+        }
+
+<span class="nc" id="L148">        currentBook.addMultipleContacts(list);</span>
+<span class="nc" id="L149">        System.out.println(&quot;Multiple contacts added successfully&quot;);</span>
+<span class="nc" id="L150">    }</span>
+
+    public void displayAllContacts() {
+<span class="nc bnc" id="L153" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L154">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L155">            return;</span>
+        }
+<span class="nc" id="L157">        List&lt;Contacts&gt; contacts = currentBook.getAllContacts();</span>
+<span class="nc bnc" id="L158" title="All 2 branches missed.">        if (contacts.isEmpty()) {</span>
+<span class="nc" id="L159">            System.out.println(&quot;Address Book is empty&quot;);</span>
+<span class="nc" id="L160">            return;</span>
+        }
+
+<span class="nc" id="L163">        System.out.println(&quot;\n Contact List &quot;);</span>
+<span class="nc bnc" id="L164" title="All 2 branches missed.">        for (Contacts c : contacts) {</span>
+<span class="nc" id="L165">            System.out.println(c);</span>
+<span class="nc" id="L166">            System.out.println();</span>
+<span class="nc" id="L167">        }</span>
+<span class="nc" id="L168">    }</span>
+    
+    
+    // Use Case - 11
+    public void sortByName() {
+<span class="nc bnc" id="L173" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L174">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L175">            return;</span>
+        }
+<span class="nc" id="L177">        currentBook.sortByName();</span>
+<span class="nc" id="L178">        System.out.println(&quot;Contacts sorted alphabetically by Name&quot;);</span>
+<span class="nc" id="L179">        displayAllContacts(); </span>
+<span class="nc" id="L180">    }</span>
+    
+    
+    // Use Case - 12
+    public void sortByCity() {
+<span class="nc bnc" id="L185" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L186">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L187">            return;</span>
+        }
+<span class="nc" id="L189">        currentBook.sortByCity();</span>
+<span class="nc" id="L190">        System.out.println(&quot;Contacts sorted by City&quot;);</span>
+<span class="nc" id="L191">    }</span>
+    public void sortByState() {
+<span class="nc bnc" id="L193" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L194">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L195">            return;</span>
+        }
+<span class="nc" id="L197">        currentBook.sortByState();</span>
+<span class="nc" id="L198">        System.out.println(&quot;Contacts sorted by State&quot;);</span>
+<span class="nc" id="L199">    }</span>
+    public void sortByZip() {
+<span class="nc bnc" id="L201" title="All 2 branches missed.">        if (currentBook == null) {</span>
+<span class="nc" id="L202">            System.out.println(&quot;Please select an Address Book first&quot;);</span>
+<span class="nc" id="L203">            return;</span>
+        }
+<span class="nc" id="L205">        currentBook.sortByZip();</span>
+<span class="nc" id="L206">        System.out.println(&quot;Contacts sorted by Zip&quot;);</span>
+<span class="nc" id="L207">    }</span>
+
+    
+    
+    //  HELPER 
+
+    private Contacts takeContactInput() {
+<span class="nc" id="L214">        System.out.print(&quot;First Name: &quot;);</span>
+<span class="nc" id="L215">        String firstName = sc.nextLine();</span>
+<span class="nc" id="L216">        System.out.print(&quot;Last Name: &quot;);</span>
+<span class="nc" id="L217">        String lastName = sc.nextLine();</span>
+<span class="nc" id="L218">        System.out.print(&quot;Address: &quot;);</span>
+<span class="nc" id="L219">        String address = sc.nextLine();</span>
+<span class="nc" id="L220">        System.out.print(&quot;City: &quot;);</span>
+<span class="nc" id="L221">        String city = sc.nextLine();</span>
+<span class="nc" id="L222">        System.out.print(&quot;State: &quot;);</span>
+<span class="nc" id="L223">        String state = sc.nextLine();</span>
+<span class="nc" id="L224">        System.out.print(&quot;Zip: &quot;);</span>
+<span class="nc" id="L225">        String zip = sc.nextLine();</span>
+<span class="nc" id="L226">        System.out.print(&quot;Phone: &quot;);</span>
+<span class="nc" id="L227">        String phone = sc.nextLine();</span>
+<span class="nc" id="L228">        System.out.print(&quot;Email: &quot;);</span>
+<span class="nc" id="L229">        String email = sc.nextLine();</span>
+
+<span class="nc" id="L231">        return new Contacts(firstName, lastName, address, city, state, zip, phone, email);</span>
+    }
+
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
