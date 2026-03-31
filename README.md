@@ -298,52 +298,6 @@ BridgeLabz-Training/
     *   **JDBC & DBMS:** Created `jdbc-dbms-practice` branch. Refactored `HealthClinicApp` project structure. Implemented "View All Patients" feature.
     *   **Collections Scenarios:** Implemented `JobPortal` (Custom Exceptions), `EventAnalyzer` (Streams & Maps), and `BankAccount` (JUnit Testing) in `scenario-based` folder.
 
-## Week 10: Advanced Scenarios & System Design
-**Employee Wage & Address Book Enhancements**
-
-*   **16-Feb-2026 (Sunday):**
-    *   **Scenario-Based:** Worked on **Employee Wage** computation problem involving procedural and object-oriented approaches.
-
-*   **17-Feb-2026 (Monday):**
-    *   **Address Book System:** Implemented advanced features (UC11-UC18) for the **AddressBook** system in `oops-practice/scenario-based`:
-        *   **Sorting:** Added functionality to sort contacts by City, State, and Zip code.
-        *   **File IO:** Implemented manual Read/Write operations for **Text (.txt)**, **CSV (.csv)**, and **JSON (.json)** files without external libraries.
-        *   **JSON Server:** Integrated with a local JSON Server using Java's `HttpClient` for RESTful operations (GET/POST).
-        *   **Database:** Implemented JDBC connectivity to MySQL for persistent storage of contact details.
-        *   **Multi-threading:** Refactored all IO operations to execute in separate threads for non-blocking UI.
-
----
-
-## Week 11: M1 Question Practice — Scenario-Based Problem Solving
-**Validation, OOP Design, Regex & Data Structure Scenarios**
-
-*   **17-Mar-2026 (Monday):**
-    *   **DSA Scenario-Based:** Created `m1 question practice` folder inside `dsa-practice/scenario-based/`. Solved 16 scenario-based questions across 8 sets (Set1–Set4 + ExtraSet1–ExtraSet4):
-        *   **Set 1:**
-            *   `GlobalShipmentValidator` — Validates shipment records (code, date, mode, weight, status) using custom rules.
-            *   `VersionControlledStorage` — File versioning system with UPLOAD / FETCH / LATEST / TOTAL_STORAGE operations.
-        *   **Set 2:**
-            *   `KeyGeneration` — String validation + ASCII-based key transformation (lowercase → remove even-ASCII → reverse → uppercase even-index).
-            *   `QuizPerformanceRanking` — Quiz ranking system with department-wise and quiz-wise top scorer queries.
-        *   **Set 3:**
-            *   `CorporateEmailAccessControl` — Regex-based email format validation with department and domain rules.
-            *   `FestivalManagementSystem` — OOP festival management supporting MUSIC, FOOD, and ART festival types.
-        *   **Set 4:**
-            *   `DynamicTemplateProcessor` — Template placeholder processor supporting DATE, UPPER, LOWER, and REPEAT tags.
-            *   `SupermarketInventory` — OOP inventory system for Electronics and Clothing products with total value calculation.
-        *   **ExtraSet 1:**
-            *   `DocumentRedactionEngine` — Regex-based document redaction: masks National IDs and bank accounts, removes repeated words, trims trailing symbols.
-            *   `CreditCardManagement` — Credit card system with ISSUE, SPEND, PAYMENT, and HOLDER commands.
-        *   **ExtraSet 2:**
-            *   `ExpressionTagScoringEngine` — Evaluates `[SUM/MUL/MAX/MIN:expr]` tags using regex with validation for leading zeros and malformed tags.
-            *   `CollegeProjectCompetition` — Competition manager with REGISTER, REVISE, FILTERDOMAIN, and QUALIFY commands.
-        *   **ExtraSet 3:**
-            *   `URLValidationSystem` — URL validator checking protocol, website name, domain, and duplicate tracking.
-            *   `RailwayDynamicSeatAllocation` — Railway booking system with dynamic fare, CANCEL, ROUTE, and SUMMARY.
-        *   **ExtraSet 4:**
-            *   `HybridNetworkIdentifiers` — Validates IPv6::MAC hybrid network identifiers with strict group/character rules.
-            *   `MultiTypeBankAccountManagement` — Multi-type bank OOP system (Savings/Current/Business) with overdraft rules and transaction charges.
-
 ---
 
 ## Repository Info
